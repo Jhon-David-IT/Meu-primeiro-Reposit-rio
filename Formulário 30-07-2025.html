@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu primeiro formulário</title>
+</head>
+<body>
+	<h1>Formulário de Contato: Renais do Cariri</h1>
+	<h3>Por favor, preencha os campos abaixo para entrar em contato conosco.</h3>
+	<form action="#" method="POST"> 
+		<p>
+			<label for="nome"><strong>Nome Completo: </strong></label>
+			<input type="text" id="nome" name="nome_completo" placeholder="Digite aqui seu nome completo" required autofocus style="width:300px;"> 
+		</p>
+		<p>
+			<label for="email"><strong> E-mail: </strong></label>
+			<input type="email" id="email" name="email_contato" placeholder="Digite aqui o seu endereço de email" required autofocus style="width: 220px;"> 
+		</p>
+		<p>
+			<label for="telefone"><strong>Telefone: </strong></label>
+			<input type="tel" id="telefone" name="telefone_contato" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="DD9XXXX-XXXX" required autofocus style="width:110px;">
+			<small>EX: 88997356647 (Apenas números, com DDD)</small>
+		</p>
+		<p>
+			<label for="idade"><strong>Idade: </strong></label>
+			<input type="number" id="idade" name="idade_usuario" min="18" placeholder="Digite a sua Idade" required autofocus style="width:50px;">
+			<small>Idade mínima 18 anos.</small>
+		</p>
+		<p>
+			<label for="tipo_contato">Como prefere ser contatado? </label>
+			<select id="tipo_contato" name="tipo_contato_pref">
+				<option value="">-- Selecione --</option>
+				<option value="email">Por E-mail</option>
+				<option value="telefone">Por Telefone</option>
+				<option value="whatsaap">Por Whatsaap</option>
+			</select>			
+		</p>
+		<p>
+			<label for="mensagem">Sua Mensagem:</label><br>	
+			<textarea id="mensagem" name="mensagem_usuario" rows="8" placeholder="Escreva sua mensagem aqui ..." style="width: 500px;" ></textarea>
+		</p>
+		<button type="submit"> Enviar formulário</button>
+		<p>
+			<button type="reset">Limpar Campos</button>
+		</p>
+	</form>
+	<p><small>&copy; 2025 Seu formulário de Contato. Todos os direitos reservados.</small></p>
+</body>
+
+
+</html>
